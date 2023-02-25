@@ -25,13 +25,15 @@ emotions_emoji_dict = {"anger":"😠","disgust":"🤮", "fear":"😨😱", "happ
 
 
 def main():
-    st.title("Emotion Classifier App")
+    st.title("Emotion Classifier App:")
+    st.title("Which can detect emotion from your written text message:")
     menu = ["Home","Monitor","About"]
 
     choice = st.sidebar.selectbox("Menu",menu)
 
     if choice == "Home":
-        st.subheader("Home-Emotion In Text")
+        st.subheader("Home Emotion In Text")
+        st.subheader("This is really very cool!!!")
 
         with st.form(key = 'emotion_clf_form'):
             raw_text = st.text_area("Type here")
